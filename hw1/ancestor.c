@@ -33,7 +33,7 @@ static int ancestor_show(struct seq_file *m, void *v)
     }
 
     // Find the task_struct of the process using its PID
-    task = pid_task(find_vpid(stored_pid, PIDTYPE_PID);
+    task = pid_task(find_vpid(stored_pid), PIDTYPE_PID);
     if (!task) {
         seq_printf(m, "PID %d not found.\n", stored_pid);
         return 0;

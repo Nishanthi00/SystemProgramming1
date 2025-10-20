@@ -85,7 +85,7 @@ static int analyzer_show(struct seq_file *m, void *v)
     }
 
     // Find the starting process
-    start = pid_task(find_vpid(stored_pid, PIDTYPE_PID);
+    start = pid_task(find_vpid(stored_pid), PIDTYPE_PID);
     if (!start) {
         seq_printf(m, "PID %d not found.\n", stored_pid);
         return 0;

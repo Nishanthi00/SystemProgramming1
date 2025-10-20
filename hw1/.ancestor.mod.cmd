@@ -1,0 +1,1 @@
+savedcmd_/workspaces/SystemProgramming1/hw1/ancestor.mod := printf '%s\n'   ancestor.o | awk '!x[$$0]++ { print("/workspaces/SystemProgramming1/hw1/"$$0) }' > /workspaces/SystemProgramming1/hw1/ancestor.mod
